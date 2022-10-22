@@ -1,0 +1,242 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+.slide-container{
+  max-width: 1420px;
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgb(255, 208, 0);
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  /* border-radius: 25px; */
+}
+.card{
+  /* border-radius: 25px; */
+  height:40rem;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.inner-box{
+  width: 15rem;
+  height: 7rem;
+  background-color: rgba(0, 255, 255, 0.06);
+  margin:1rem auto 4rem auto;
+  /* margin-top: 2rem; */
+  display:block;
+  text-align: center;
+  
+}
+
+.inner-box .inner-heading{
+  font-size: 1.1rem;
+  font-weight: bolder;
+}.inner-box .price{
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-top: -1rem;
+  margin-left: 0.5rem;
+}.inner-box i{
+position: relative;
+top: -4rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  /* margin-top: -7.6rem; */
+  margin-left:-7rem ;
+}
+.inner-box .inner-para{
+  font-size: 1rem;
+  font-weight: 600;
+  margin: -2.6rem auto;
+  color: blue;
+}
+
+/* .inner-box #5998{
+  position: relative;
+  padding-left: 5rem;
+ display: flex;
+  margin-left: 9rem;
+} */
+
+/* .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #366bfb;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+} */
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  border: 4px solid #4070F4;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  margin-top: -1rem;
+  font-size: 14px;
+  color: #1b1b1b;
+  /* text-align: center; */
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: rgba(0, 0, 255, 0.744);
+  padding: 8px 16px;
+  position: absolute;
+  top: 36rem;
+  background-color:white;
+  /* border-radius: 6px; */
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  color: #061d5d;
+}
+
+.swiper-navBtn{
+  color: #fafcff;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 0;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+  /* opacity: 1; */
+}
+
+
+
+
+
+
+
+.heading{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight:lighter;
+  font-size: 1.35rem;
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
+  opacity: .9;
+
+}
+
+.line{
+  width: 14rem;
+  height: .1rem;
+  margin-left: 0rem;
+  background-color: rgba(0, 255, 255, 0.06);
+}
+
+
+#trapezoid {
+  position: relative;
+  border-bottom: 25px solid rgb(255, 204, 0);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  transform:rotate(-45deg);
+  width:6rem;
+  left: -1.5rem;
+  top:.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+#heading1{
+  margin-top: -2.4rem;
+}
+
+@media (max-width:1200px) {
+  .swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #4070F4;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
